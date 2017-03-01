@@ -1,6 +1,6 @@
 jobs:
   - name: sample_node_runCI
-    type: runCLI
+    type: runCI
     steps:
       - IN: nightly-trigger
     on_success:
