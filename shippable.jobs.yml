@@ -33,6 +33,8 @@ jobs:
     steps:
       - IN: options
       - IN: app-img
+        versionName: latest
+
 
   - name: sampleapp-deploy
     type: deploy

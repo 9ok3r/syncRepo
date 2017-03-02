@@ -10,6 +10,8 @@ resources:
     integration: dockerhub
     pointer:
       sourceName: "chetantarale/sampleapp"
+    seed:
+      versionName: latest
 
   - name: ddc-cluster
     type: cluster
