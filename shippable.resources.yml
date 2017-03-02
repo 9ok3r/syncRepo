@@ -23,7 +23,7 @@ resources:
       portMappings:                             #optional
         - "51000:51000"
 
-  - name: sampleapp-repo
+  - name: sampleapp_repo
     type: gitRepo
     integration: github
     pointer:

@@ -11,7 +11,7 @@ jobs:
   - name: build-app
     type: runCLI
     steps:
-      - IN: sampleapp-repo
+      - IN: sampleapp_repo
       - IN: dockerhub
       - OUT: app-img
       - TASK:
