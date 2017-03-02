@@ -11,7 +11,7 @@ resources:
     pointer:
       sourceName: "chetantarale/sampleapp"
     seed:
-      versionName: master.5
+      versionName: latest
 
   - name: ddc-cluster
     type: cluster
