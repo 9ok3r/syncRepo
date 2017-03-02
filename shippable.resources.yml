@@ -29,3 +29,7 @@ resources:
     pointer:
       sourceName: 9ok3r/sampleApp
       branch: master
+
+  - name: dockerhub
+    type: integration
+    integration: "dockerhub"
