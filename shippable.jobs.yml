@@ -31,11 +31,11 @@ jobs:
   - name: sampleapp-man
     type: manifest
     steps:
+      - IN: options
       - IN: app-img
 
   - name: sampleapp-deploy
     type: deploy
     steps:
-      - IN: options
       - IN: sampleapp-man
       - IN: ddc-cluster
