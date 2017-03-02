@@ -4,3 +4,16 @@ resources:
     type: time
     seed:
       interval: " “0 22 * * *”"
+
+  - name: app_img
+    type: image
+    integration: dockerhub
+    pointer:
+      sourceName: "chetantarale/sampleapp"
+    seed:
+      versionName: master.5
+
+  - name: ddc-cluster
+    type: cluster
+    integration: ddc-cluster
+

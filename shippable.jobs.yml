@@ -7,3 +7,14 @@ jobs:
       - script: echo 'on success !!!!!'
     on_failure:
       - script: echo 'Failed job .... :('
+
+  - name: sampleapp-man
+    type: manifest
+    steps:
+      - IN: sampleApp_runCI
+
+  - name: sampleapp-deploy
+    type: deploy
+    steps:
+      - IN: sampleapp-man
+      - IN: ddl-cluster
