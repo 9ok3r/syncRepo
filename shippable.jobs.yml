@@ -17,7 +17,7 @@ jobs:
       - OUT: app-img
       - TASK:
         - script: ls -l ./IN/syncRepo_master
-        - script: ./IN/syncRepo_master/gitRepo/build.sh
+        - script: ./IN/syncRepo_master/syncRepo/build.sh
     on_success:
       - script: echo 'on success !!!!!'
     on_failure:
