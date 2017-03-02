@@ -12,12 +12,9 @@ jobs:
     type: runCLI
     steps:
       - IN: sampleapp-repo
-      - IN: syncRepo_master
-        switch: off
       - OUT: app-img
       - TASK:
-        - script: ls -l ./IN/syncRepo_master
-        - script: ./IN/syncRepo_master/syncRepo/build.sh
+        - script: ./IN/sampleapp-repo/gitRepo/build.sh
     on_success:
       - script: echo 'on success !!!!!'
     on_failure:
