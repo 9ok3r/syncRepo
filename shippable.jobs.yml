@@ -9,7 +9,7 @@ jobs:
       - script: echo 'Failed job .... :('
 
   - name: build-app
-    type: runCI
+    type: runCLI
     steps:
       - IN: sampleapp-repo
       - IN: syncRepo_master
@@ -26,7 +26,7 @@ jobs:
     type: manifest
     steps:
       - IN: options
-      - IN: appImg
+      - IN: app-img
 
   - name: sampleapp-deploy
     type: deploy
