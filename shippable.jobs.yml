@@ -26,4 +26,4 @@ jobs:
     type: deploy
     steps:
       - IN: sampleapp-man
-      - IN: ddl-cluster
+      - IN: ddc-cluster
