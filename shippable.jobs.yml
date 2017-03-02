@@ -20,6 +20,7 @@ jobs:
   - name: sampleapp-man
     type: manifest
     steps:
+      - IN: options
       - IN: app_img
 
   - name: sampleapp-deploy

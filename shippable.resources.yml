@@ -17,3 +17,8 @@ resources:
     type: cluster
     integration: ddc-cluster
 
+  - name: options                              #required
+    type: dockerOptions                         #required
+    version:
+      portMappings:                             #optional
+        - "51000:51000"
