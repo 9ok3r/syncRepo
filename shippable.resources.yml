@@ -5,7 +5,7 @@ resources:
     seed:
       interval: " “0 22 * * *”"
 
-  - name: app_img
+  - name: app-img
     type: image
     integration: dockerhub
     pointer:
@@ -22,3 +22,10 @@ resources:
     version:
       portMappings:                             #optional
         - "51000:51000"
+
+  - name: sampleapp-repo
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: 9ok3r/sampleApp
+      branch: master
