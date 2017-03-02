@@ -12,6 +12,7 @@ jobs:
     type: runCLI
     steps:
       - IN: sampleapp-repo
+      - IN: dockerhub
       - OUT: app-img
       - TASK:
         - script: printenv
