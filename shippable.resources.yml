@@ -32,7 +32,7 @@ resources:
 
   - name: dockerhub
     type: integration
-    integration: "dockerhub" /
+    integration: "dockerhub"
 
   - name: bat_params
       type: params
