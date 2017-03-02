@@ -16,7 +16,7 @@ jobs:
       - OUT: app-img
       - TASK:
         - script: printenv
-        - script: ./IN/sampleapp-repo/gitRepo/build.sh
+        - script: ./IN/sampleapp_repo/gitRepo/build.sh
     on_success:
       - script: echo 'on success !!!!!'
     on_failure:
