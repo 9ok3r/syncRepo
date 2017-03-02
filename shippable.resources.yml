@@ -32,4 +32,11 @@ resources:
 
   - name: dockerhub
     type: integration
-    integration: "dockerhub"
+    integration: "dockerhub" /
+
+  - name: bat_params
+      type: params
+      version:
+        params:
+          url: "http://107.170.125.58"
+          port: 51000
