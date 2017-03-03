@@ -22,6 +22,8 @@ resources:
     version:
       portMappings:                             #optional
         - "51000:51000"
+       tags:
+         - latest
 
   - name: sampleapp_repo
     type: gitRepo
