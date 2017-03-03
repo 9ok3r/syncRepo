@@ -10,8 +10,6 @@ resources:
     integration: dockerhub
     pointer:
       sourceName: "chetantarale/sampleapp"
-    seed:
-      versionName: latest
 
   - name: ddc-cluster
     type: cluster
@@ -22,8 +20,6 @@ resources:
     version:
       portMappings:                             #optional
         - "51000:51000"
-      tags:
-        - latest
 
   - name: sampleapp_repo
     type: gitRepo
