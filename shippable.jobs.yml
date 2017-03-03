@@ -40,4 +40,5 @@ jobs:
     type: deploy
     steps:
       - IN: sampleapp-man
+        force: true
       - IN: ddc-cluster
