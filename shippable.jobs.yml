@@ -33,6 +33,7 @@ jobs:
     steps:
       - IN: options
       - IN: app-img
+        force: true
         versionName: latest
 
 
