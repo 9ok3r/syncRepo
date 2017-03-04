@@ -5,38 +5,38 @@ resources:
     seed:
       interval: "0 22 * * *"
 
-  # - name: app-img
-  #   type: image
-  #   integration: dockerhub
-  #   pointer:
-  #     sourceName: "chetantarale/sampleapp"
-  #   seed:
-  #     versionName: master.3
+  - name: app-img
+    type: image
+    integration: dockerhub
+    pointer:
+      sourceName: "chetantarale/sampleapp"
+    seed:
+      versionName: master.3
 
-  # - name: ddc-cluster
-  #   type: cluster
-  #   integration: ddc-cluster
+  - name: ddc-cluster
+    type: cluster
+    integration: ddc-cluster
 
-  # - name: options                              #required
-  #   type: dockerOptions                         #required
-  #   version:
-  #     portMappings:                             #optional
-  #       - "51000:51000"
+  - name: options                              #required
+    type: dockerOptions                         #required
+    version:
+      portMappings:                             #optional
+        - "51000:51000"
 
-  # - name: sampleapp_repo
-  #   type: gitRepo
-  #   integration: github
-  #   pointer:
-  #     sourceName: 9ok3r/sampleApp
-  #     branch: master
+  - name: sampleapp_repo
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: 9ok3r/sampleApp
+      branch: master
 
-  # - name: dockerhub
-  #   type: integration
-  #   integration: "dockerhub"
+  - name: dockerhub
+    type: integration
+    integration: "dockerhub"
 
-  # - name: bat_params
-  #   type: params
-  #   version:
-  #     params:
-  #       url: "http://107.170.125.58"
-  #       port: 51000
+  - name: bat_params
+    type: params
+    version:
+      params:
+        url: "http://107.170.125.58"
+        port: 51000
