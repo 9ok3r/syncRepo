@@ -1,11 +1,11 @@
 resources:
   # This time resource posts new versions for it, every 2 minutes
-  - name: nightly-trigger
-    type: time
-    seed:
-      interval: "0 22 * * *"
+  # - name: nightly-trigger
+  #   type: time
+  #   seed:
+  #     interval: "0 22 * * *"
 
-  - name: app-img
+  # - name: app-img
     type: image
     integration: dockerhub
     pointer:
@@ -34,9 +34,9 @@ resources:
     type: integration
     integration: "dockerhub"
 
-  - name: bat_params
-    type: params
-    version:
-      params:
-        url: "http://107.170.125.58"
-        port: 51000
+  # - name: bat_params
+  #   type: params
+  #   version:
+  #     params:
+  #       url: "http://107.170.125.58"
+  #       port: 51000
