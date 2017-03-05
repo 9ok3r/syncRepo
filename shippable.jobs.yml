@@ -1,6 +1,6 @@
 jobs:
   - name: build-app
-    type: runSh
+    type: runCLI
     steps:
       - IN: sampleapp_repo
       - IN: dockerhub
