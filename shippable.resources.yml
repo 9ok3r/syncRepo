@@ -5,7 +5,7 @@ resources:
   #   seed:
   #     interval: "0 22 * * *"
 
-  # - name: app-img
+  - name: app-img
     type: image
     integration: dockerhub
     pointer:
