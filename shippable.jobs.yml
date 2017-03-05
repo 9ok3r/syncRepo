@@ -13,11 +13,11 @@ jobs:
     on_failure:
       - script: echo 'Failed job .... :('
 
-  # - name: bat_runCI
-  #   type: runCI
-  #   steps:
-  #     - IN: bat_params
-  #     - IN: sampleapp-deploy
+  - name: bat_runCI
+    type: runCI
+    steps:
+      - IN: bat_params
+      - IN: sampleapp-deploy
 
   - name: sampleapp-man
     type: manifest
