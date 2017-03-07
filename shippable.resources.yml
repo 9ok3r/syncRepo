@@ -40,10 +40,3 @@ resources:
       params:
         url: "http://107.170.125.58"
         port: 51000
-
-  - name: bat_ciRepo
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: 9ok3r/sampleApp
-      branch: 9ok3r-patch-1
